@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+button {
+	background:#FFCC33;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+</style>
+
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(' <a><img src="https://thumbnail0.baidupcs.com/thumbnail/8f1e7738ecde45a757d96cea3293ae5e?fid=679231294-250528-290263968933453&time=1495893600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-tqYJNrsf86SzhKS6y7Ut4U28pYo%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=3408368806996192081&dp-callid=0&size=c710_u400&quality=100" alt="A doge" ></a>');
+  });
+
+  $("#btn2").click(function(){
+    $("a").remove();
+  });
+});
+</script>
+</head>
+
+<body>
+<h1>Coming doge</h1>
+<button id="btn1"> Doge+1 </button>
+<button id="btn2"> Clear away </button>
+<p></p>
+</body>
+</html>
